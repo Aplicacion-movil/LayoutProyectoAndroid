@@ -1,6 +1,21 @@
-<style name="Widget.Pulso.CardView" parent="Widget.MaterialComponents.CardView">
-    <item name="cardCornerRadius">@dimen/card_corner_radius</item>
-    <item name="cardElevation">0dp</item>
-    <item name="strokeWidth">0dp</item>
-    <item name="cardBackgroundColor">@color/pulso_surface</item>
-</style>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Android" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/pulso_primary</item>
+        <item name="colorOnPrimary">@color/pulso_surface</item>
+        <item name="colorSurface">@color/pulso_surface</item>
+        <item name="colorOnSurface">@color/pulso_text_primary</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/pulso_background</item>
+    </style>
+
+    <style name="Theme.Android" parent="Base.Theme.Android" />
+
+    <style name="Widget.Pulso.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardBackgroundColor">@color/pulso_surface</item>
+    </style>
+</resources>

@@ -25,22 +25,63 @@
             android:paddingTop="@dimen/spacing_large"
             android:paddingBottom="@dimen/spacing_large">
 
-            <!-- 1. Encabezado / Saludo -->
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Encabezado: el texto puede ocupar todo el espacio disponible
+                 sin invadir los controles de la derecha. -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/greeting_title"
-                android:textColor="@color/pulso_text_primary"
-                android:textSize="@dimen/text_title"
-                android:textStyle="bold" />
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:text="@string/greeting_subtitle"
-                android:textColor="@color/pulso_text_secondary"
-                android:textSize="@dimen/text_body" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/greetingTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="@string/greeting_title"
+                        android:textColor="@color/pulso_text_primary"
+                        android:textSize="@dimen/text_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:text="@string/greeting_subtitle"
+                        android:textColor="@color/pulso_text_secondary"
+                        android:textSize="@dimen/text_body" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/notificationsButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/notifications_description"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_notifications" />
+
+                <TextView
+                    android:id="@+id/avatarInitials"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:background="@drawable/bg_avatar"
+                    android:contentDescription="@string/avatar_description"
+                    android:gravity="center"
+                    android:text="@string/avatar_initials"
+                    android:textColor="@color/pulso_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <!-- 2. Tarjeta Principal "Tu salud, a tu ritmo" -->
             <com.google.android.material.card.MaterialCardView
@@ -149,7 +190,7 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:padding="@dimen/spacing_medium"
                         android:text="@string/service_dental"
                         android:textColor="@color/pulso_text_primary"
