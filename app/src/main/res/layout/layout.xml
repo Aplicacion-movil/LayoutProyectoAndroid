@@ -12,5 +12,11 @@
         tools:layout_editor_absoluteX="-3dp"
         tools:layout_editor_absoluteY="334dp">
 
+        <FrameLayout
+            android:layout_width="412dp"
+            android:layout_height="389dp"
+            android:background="@drawable/rounded_square"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="2dp"></FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
