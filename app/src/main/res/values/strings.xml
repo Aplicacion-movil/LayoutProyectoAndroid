@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">android</string>
+    <string name="app_name">Pulso</string>
+    <string name="greeting_title">¡Hola, Maria!</string>
+    <string name="greeting_subtitle">¿Cómo te sientes hoy?</string>
+
+    <string name="hero_card_title">Tu salud, a tu ritmo</string>
+    <string name="hero_card_description">Reserva consultas médicas y realiza seguimiento instantáneo.</string>
+    <string name="hero_card_button">Reservar cita</string>
+
+    <string name="section_services">Servicios</string>
+    <string name="service_general">General</string>
+    <string name="service_cardio">Cardiología</string>
+    <string name="service_dental">Odontología</string>
+    <string name="service_lab">Analíticas</string>
+
+    <string name="section_next_appointment">Próxima cita</string>
+    <string name="appointment_doctor">Dr. Alejandro Silva</string>
+    <string name="appointment_specialty">Cardiología preventiva</string>
+    <string name="appointment_date">Jueves, 15 Oct • 10:30 AM</string>
 </resources>
