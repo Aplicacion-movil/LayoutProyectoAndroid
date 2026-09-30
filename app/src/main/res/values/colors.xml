@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="green">#00FF00</color>
-    <color name="gray">#D3D3D3</color>
+    <color name="pulso_background">#F5F8F7</color>
+    <color name="pulso_surface">#FFFFFF</color>
+    <color name="pulso_primary">#146C60</color>
+    <color name="pulso_text_primary">#17332F</color>
+    <color name="pulso_text_secondary">#526660</color>
+    <color name="pulso_accent_mint">#DDF3EB</color>
 </resources>

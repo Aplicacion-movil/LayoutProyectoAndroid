@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">android</string>
+    <string name="app_name">Pulso</string>
+    <string name="greeting_title">Hola, Alex</string>
+    <string name="greeting_subtitle">¿Cómo te sientes hoy?</string>
+    <string name="avatar_initials">AL</string>
+    <string name="avatar_description">Avatar de Alex</string>
+    <string name="notifications_description">Notificaciones</string>
+    <string name="no_notifications">No tienes notificaciones nuevas</string>
+    <string name="dialog_ok">Entendido</string>
+
+    <string name="hero_card_title">Tu salud, a tu ritmo</string>
+    <string name="hero_card_description">Reserva consultas médicas y realiza seguimiento instantáneo.</string>
+    <string name="hero_card_button">Reservar cita</string>
+
+    <string name="section_services">Servicios</string>
+    <string name="service_general">General</string>
+    <string name="service_cardio">Cardiología</string>
+    <string name="service_dental">Odontología</string>
+    <string name="service_lab">Analíticas</string>
+
+    <string name="section_next_appointment">Próxima cita</string>
+    <string name="appointment_doctor">Dr. Alejandro Silva</string>
+    <string name="appointment_specialty">Cardiología preventiva</string>
+    <string name="appointment_date">Jueves, 15 Oct • 10:30 AM</string>
 </resources>
