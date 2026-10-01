@@ -29,5 +29,19 @@ public class MainActivity extends AppCompatActivity {
                 .setMessage(R.string.no_notifications)
                 .setPositiveButton(R.string.dialog_ok, null)
                 .show());
+
+        findViewById(R.id.bookAppointmentButton).setOnClickListener(view ->
+                new MaterialAlertDialogBuilder(this)
+                        .setTitle(R.string.booking_demo_title)
+                        .setItems(R.array.booking_options, (dialog, which) -> {
+                            String choice = getResources().getStringArray(R.array.booking_options)[which];
+                            new MaterialAlertDialogBuilder(this)
+                                    .setTitle(R.string.booking_confirmation_title)
+                                    .setMessage(getString(R.string.booking_confirmation_message, choice))
+                                    .setPositiveButton(R.string.dialog_ok, null)
+                                    .show();
+                        })
+                        .setNegativeButton(R.string.booking_cancel, null)
+                        .show());
     }
 }
