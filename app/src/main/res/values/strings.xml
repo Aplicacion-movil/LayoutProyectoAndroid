@@ -2,7 +2,6 @@
     <string name="app_name">Pulso</string>
     <string name="greeting_title">Hola, Alex</string>
     <string name="greeting_subtitle">¿Cómo te sientes hoy?</string>
-    <string name="avatar_initials">AL</string>
     <string name="avatar_description">Avatar de Alex</string>
     <string name="notifications_description">Notificaciones</string>
     <string name="no_notifications">No tienes notificaciones nuevas</string>
