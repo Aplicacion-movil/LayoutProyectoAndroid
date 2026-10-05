@@ -9,7 +9,7 @@
     <string name="dialog_ok">Entendido</string>
 
     <string name="hero_card_title">Tu salud, a tu ritmo</string>
-    <string name="hero_card_description">Reserva consultas médicas y realiza seguimiento instantáneo.</string>
+    <string name="hero_card_description">Encuentra un momento para cuidarte</string>
     <string name="hero_card_button">Reservar cita</string>
 
     <string name="section_services">Servicios</string>
@@ -22,4 +22,14 @@
     <string name="appointment_doctor">Dr. Alejandro Silva</string>
     <string name="appointment_specialty">Cardiología preventiva</string>
     <string name="appointment_date">Jueves, 15 Oct • 10:30 AM</string>
+    <string name="booking_demo_title">Reservar cita · Simulación</string>
+    <string name="booking_general">Consulta general</string>
+    <string name="booking_specialist">Especialista</string>
+    <string name="booking_cancel">Cancelar</string>
+    <string name="booking_confirmation_title">Simulación completada</string>
+    <string name="booking_confirmation_message">Has elegido: %1$s. Esta es una simulación; no se ha reservado ninguna cita real.</string>
+    <string-array name="booking_options">
+        <item>@string/booking_general</item>
+        <item>@string/booking_specialist</item>
+    </string-array>
 </resources>
