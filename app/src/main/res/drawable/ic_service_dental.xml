@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:fillColor="@color/pulso_primary"
+        android:pathData="M14,2C11.8,2 10.6,1 8.3,1C4.4,1 2,4.2 2,8C2,11.2 3.5,13.5 4.7,15.6C6.2,18.3 6.2,26 9.2,26C11.5,26 11.4,19.3 14,19.3C16.6,19.3 16.5,26 18.8,26C21.8,26 21.8,18.3 23.3,15.6C24.5,13.5 26,11.2 26,8C26,4.2 23.6,1 19.7,1C17.4,1 16.2,2 14,2Z" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M14,5C16,5 17.2,4 19,4"
+        android:strokeColor="@color/pulso_surface"
+        android:strokeLineCap="round"
+        android:strokeWidth="1.8" />
+</vector>
