@@ -17,7 +17,8 @@
     <string name="service_dental">Odontología</string>
     <string name="service_lab">Analíticas</string>
 
-    <string name="section_next_appointment">Próxima cita</string>
+    <string name="section_next_appointment">Próximas citas</string>
+    <string name="section_see_all">Ver todo</string>
     <string name="appointment_doctor">Dr. Alejandro Silva</string>
     <string name="appointment_specialty">Cardiología preventiva</string>
     <string name="appointment_date">Jueves, 15 Oct • 10:30 AM</string>

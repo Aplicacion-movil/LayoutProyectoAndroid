@@ -241,15 +241,32 @@
                 </com.google.android.material.card.MaterialCardView>
             </GridLayout>
 
-            <!-- 4. Sección Próxima Cita -->
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- 4. Sección Próximas Citas -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_large"
-                android:text="@string/section_next_appointment"
-                android:textColor="@color/pulso_text_primary"
-                android:textSize="@dimen/text_title"
-                android:textStyle="bold" />
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/section_next_appointment"
+                    android:textColor="@color/pulso_text_primary"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="@string/section_see_all"
+                    android:textColor="@color/pulso_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.Pulso.CardView"
