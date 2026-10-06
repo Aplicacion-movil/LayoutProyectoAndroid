@@ -7,6 +7,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -43,5 +44,23 @@ public class MainActivity extends AppCompatActivity {
                         })
                         .setNegativeButton(R.string.booking_cancel, null)
                         .show());
+
+        ImageButton appointmentOptionsButton = findViewById(R.id.appointmentOptionsButton);
+        appointmentOptionsButton.setOnClickListener(view -> {
+            PopupMenu popupMenu = new PopupMenu(this, view);
+            popupMenu.inflate(R.menu.appointment_options_menu);
+            popupMenu.setOnMenuItemClickListener(item -> {
+                if (item.getItemId() == R.id.action_view_appointment_details) {
+                    new MaterialAlertDialogBuilder(this)
+                            .setTitle(R.string.appointment_details_title)
+                            .setMessage(R.string.appointment_details_development)
+                            .setPositiveButton(R.string.dialog_ok, null)
+                            .show();
+                    return true;
+                }
+                return false;
+            });
+            popupMenu.show();
+        });
     }
 }
