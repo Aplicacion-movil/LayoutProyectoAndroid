@@ -18,4 +18,8 @@
         <item name="strokeWidth">0dp</item>
         <item name="cardBackgroundColor">@color/pulso_surface</item>
     </style>
+
+    <style name="ShapeAppearanceOverlay.Pulso.Circle" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

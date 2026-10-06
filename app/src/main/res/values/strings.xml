@@ -22,6 +22,11 @@
     <string name="appointment_doctor">Dr. Alejandro Silva</string>
     <string name="appointment_specialty">Cardiología preventiva</string>
     <string name="appointment_date">Jueves, 15 Oct • 10:30 AM</string>
+    <string name="appointment_doctor_photo">Foto del Dr. Alejandro Silva</string>
+    <string name="appointment_more_options">Más opciones de la cita</string>
+    <string name="appointment_view_details">Ver detalles</string>
+    <string name="appointment_details_title">Detalles de la cita</string>
+    <string name="appointment_details_development">La vista de detalles está en desarrollo.</string>
     <string name="booking_demo_title">Reservar cita · Simulación</string>
     <string name="booking_general">Consulta general</string>
     <string name="booking_specialist">Especialista</string>
