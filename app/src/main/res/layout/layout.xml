@@ -144,7 +144,10 @@
                         android:text="@string/hero_card_button"
                         android:textColor="@color/pulso_primary"
                         app:backgroundTint="@color/pulso_surface"
-                        app:cornerRadius="12dp" />
+                        app:cornerRadius="12dp"
+                        app:icon="@drawable/reservar_cita"
+                        app:iconTint="@color/cardview_dark_background"/>
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
