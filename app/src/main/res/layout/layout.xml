@@ -76,7 +76,6 @@
                     android:layout_height="70dp"
                     android:background="@drawable/bg_avatar"
                     android:src="@drawable/paciente_usuario" />
-
             </LinearLayout>
 
             <!-- 2. Tarjeta Principal "Tu salud, a tu ritmo" -->
@@ -91,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="@dimen/spacing_large">
+                    android:padding="@dimen/spacing_large"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -100,10 +99,11 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="0dp"
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginEnd="@dimen/spacing_small"
+                            android:layout_marginStart="20dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -123,31 +123,42 @@
                                 android:text="@string/hero_card_description"
                                 android:textColor="@color/pulso_accent_mint"
                                 android:textSize="@dimen/text_body" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/bookAppointmentButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:minHeight="48dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/hero_card_button"
+                                android:textColor="@color/pulso_primary"
+                                app:backgroundTint="@color/pulso_surface"
+                                app:cornerRadius="12dp"
+                                app:icon="@drawable/reservar_cita"
+                                app:iconPadding="@dimen/margin_horizontal"
+                                app:iconSize="40dp"
+                                app:iconTint="@color/cardview_dark_background"/>
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="88dp"
-                            android:importantForAccessibility="no"
-                            android:focusable="false"
-                            android:src="@drawable/illustration_health" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/spacing_small"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"
+                                android:layout_marginStart="@dimen/spacing_small"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/medico_posando"/>
                     </LinearLayout>
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/bookAppointmentButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
-                        android:minHeight="48dp"
-                        android:insetTop="0dp"
-                        android:insetBottom="0dp"
-                        android:text="@string/hero_card_button"
-                        android:textColor="@color/pulso_primary"
-                        app:backgroundTint="@color/pulso_surface"
-                        app:cornerRadius="12dp"
-                        app:icon="@drawable/reservar_cita"
-                        app:iconTint="@color/cardview_dark_background"/>
-
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
